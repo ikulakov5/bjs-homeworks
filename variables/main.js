@@ -7,7 +7,7 @@ let message = `Привет, мир! Меня зовут ${myName}`;
 console.log(message);
 
 let average = (algebra + geography + physics) / 3;
-console.log(physics);
+console.log(average);
 
 let x = 2;
 let y = 22;
