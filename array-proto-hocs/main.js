@@ -10,7 +10,7 @@ const memoize = (fn, limit) => {
 		const searchRes = results.find(result => compareArrays(result.args, fnArgs));
 
 		if(searchRes) {
-			console.log('Функция вызвана из памяти');
+			return `Значение уже посчитано и результат был посчитан заранее: ${searchRes.result}`;
 		}
 
 		results.push({args: fnArgs, result: fn(...fnArgs)});
