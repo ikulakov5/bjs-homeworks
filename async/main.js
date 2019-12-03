@@ -1,6 +1,10 @@
 const showTime = () => { 
 	Data = new Date();
-	let now = Data.getHours() + ":" + Data.getMinutes();
+	let hours = Data.getHours()
+	let minutes = Data.getMinutes();
+	if(hours.length < 2) {hours = "0" + hours}
+	if(minutes.length < 2) {minutes = "0" + minutes}
+	let now = hours + ":" + minutes;
 	return now;
 };
 
@@ -28,7 +32,7 @@ function setDailyRhythm(wakeUpTime, bedTime) {
 
 }
 
-setDailyRhythm('23:49', '23:50');
+setDailyRhythm('05:09', '23:50');
 
 
 
